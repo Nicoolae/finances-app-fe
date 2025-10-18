@@ -42,12 +42,26 @@ Finances is a native SwiftUI application that brings Apple's design philosophy t
 
 ```
 Finances/
-├── Views/           # SwiftUI views and screens
-├── Models/          # Data models
-├── ViewModels/      # View models for business logic
-├── Components/      # Reusable UI components
-├── Resources/       # Assets, colors, and resources
-└── Utils/           # Helper functions and extensions
+├── App/                    # Application entry point
+├── Core/                   # Feature modules
+│   ├── Dashboard/          # Home and overview
+│   ├── Transactions/       # Transaction management
+│   ├── Budget/             # Budget tracking
+│   ├── Analytics/          # Reports and charts
+│   └── Settings/           # App settings
+├── Shared/                 # Reusable components
+│   ├── Components/         # UI components
+│   ├── Extensions/         # Swift extensions
+│   ├── Styles/             # Custom styles
+│   └── Utils/              # Helper utilities
+├── Services/               # Backend and business logic
+│   ├── Network/            # API client
+│   ├── Sync/               # Data synchronization
+│   └── Auth/               # Authentication
+├── Data/                   # Local persistence (SwiftData)
+│   ├── Models/             # Data models
+│   └── Repositories/       # Data access layer
+└── Resources/              # Assets and resources
 ```
 
 ## Contributing
