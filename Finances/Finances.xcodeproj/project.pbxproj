@@ -14,6 +14,7 @@
 		B2E7EDFB2EA430A10017C94B /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E7EDFA2EA42D690017C94B /* Color+Extensions.swift */; };
 		B2E7EDFD2EA43B130017C94B /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E7EDFC2EA43B080017C94B /* SplashScreenView.swift */; };
 		B2E7EDFF2EA43CE30017C94B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E7EDFE2EA43CE30017C94B /* LaunchScreen.storyboard */; };
+		B2E7EE082EA442CA0017C94B /* AppBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E7EE072EA442C20017C94B /* AppBackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B2E7EDFA2EA42D690017C94B /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		B2E7EDFC2EA43B080017C94B /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		B2E7EDFE2EA43CE30017C94B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B2E7EE072EA442C20017C94B /* AppBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -130,6 +132,7 @@
 		B2974A0E2EA3BDED00D3866F /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				B2E7EE062EA442BB0017C94B /* Components */,
 				B2E7EDF82EA42D510017C94B /* Extensions */,
 			);
 			path = Shared;
@@ -172,6 +175,14 @@
 				B2E7EDFA2EA42D690017C94B /* Color+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B2E7EE062EA442BB0017C94B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B2E7EE072EA442C20017C94B /* AppBackgroundView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +332,7 @@
 				B29749E42EA3B99700D3866F /* Item.swift in Sources */,
 				B2E7EDFD2EA43B130017C94B /* SplashScreenView.swift in Sources */,
 				B29749E02EA3B99700D3866F /* FinancesApp.swift in Sources */,
+				B2E7EE082EA442CA0017C94B /* AppBackgroundView.swift in Sources */,
 				B2E7EDFB2EA430A10017C94B /* Color+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

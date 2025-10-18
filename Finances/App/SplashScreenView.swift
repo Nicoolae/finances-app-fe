@@ -16,50 +16,34 @@ struct SplashScreenView: View {
             ContentView()
         } else {
             // Splash Screen
-            ZStack {
-                // MARK: - Background Gradient
+            VStack(spacing: 24) {
+                Spacer()
                 
-                LinearGradient(
-                    gradient: Gradient(colors: [
-                        Color.appBackground,
-                        Color.appBackgroundSecondary,
-                        Color.appBackground
-                    ]),
-                    startPoint: .topLeading,
-                    endPoint: .bottomTrailing
-                )
-                .ignoresSafeArea()
+                // Logo
+                Image("LogoFull")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 200, height: 200)
+                    .scaleEffect(logoScale)
+                    .opacity(logoOpacity)
                 
-                // MARK: - Content
+                Spacer()
                 
-                VStack(spacing: 24) {
-                    Spacer()
+                // Loading indicator
+                VStack(spacing: 12) {
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle(tint: Color.appPrimary))
+                        .scaleEffect(1.2)
                     
-                    // Logo
-                    Image("LogoFull")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 200, height: 200)
-                        .scaleEffect(logoScale)
-                        .opacity(logoOpacity)
-                    
-                    Spacer()
-                    
-                    // Loading indicator
-                    VStack(spacing: 12) {
-                        ProgressView()
-                            .progressViewStyle(CircularProgressViewStyle(tint: Color.appPrimary))
-                            .scaleEffect(1.2)
-                        
-                        Text("Loading your finances...")
-                            .font(.subheadline)
-                            .foregroundStyle(Color.appTextSecondary)
-                    }
-                    .opacity(textOpacity)
-                    .padding(.bottom, 60)
+                    Text("Loading your finances...")
+                        .font(.subheadline)
+                        .foregroundStyle(Color.appTextSecondary)
                 }
-                .padding()
+                .opacity(textOpacity)
+                .padding(.bottom, 60)
             }
+            .padding()
+            .withAppBackground()
             .onAppear {
                 // Start animations
                 performAnimations()
