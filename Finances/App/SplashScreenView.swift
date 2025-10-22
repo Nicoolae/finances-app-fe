@@ -13,7 +13,12 @@ struct SplashScreenView: View {
     var body: some View {
         if isActive {
             // Transition to main app
-            ContentView()
+            NavigationStack {
+                AuthenticationView()  // ← La tua view generale
+                    .navigationBarHidden(true)  // ← Nasconde barra
+            }
+            .transition(.opacity)
+            .zIndex(2)
         } else {
             // Splash Screen
             VStack(spacing: 24) {
