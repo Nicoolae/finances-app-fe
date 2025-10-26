@@ -255,11 +255,13 @@ struct TermsView: View {
                    }
                }
            }
+           .background(Color.white)
+           .preferredColorScheme(.light)
        }
        
        // MARK: - Section Views
        
-       /// Standard section with title and content
+       /// Builds a standard section with title and content
        @ViewBuilder
        private func sectionView(title: String, content: String) -> some View {
            VStack(alignment: .leading, spacing: 12) {

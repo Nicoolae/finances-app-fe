@@ -14,8 +14,8 @@ struct SplashScreenView: View {
         if isActive {
             // Transition to main app
             NavigationStack {
-                AuthenticationView()  // ← La tua view generale
-                    .navigationBarHidden(true)  // ← Nasconde barra
+                AuthenticationView() 
+                    .navigationBarHidden(true)
             }
             .transition(.opacity)
             .zIndex(2)

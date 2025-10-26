@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2900B3E2EACF6C9004CE28B /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2900B3D2EACF6C9004CE28B /* AppTextField.swift */; };
+		B2900B402EAE3976004CE28B /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2900B3F2EAE3969004CE28B /* Validators.swift */; };
 		B29749E02EA3B99700D3866F /* FinancesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29749DF2EA3B99700D3866F /* FinancesApp.swift */; };
 		B29749E22EA3B99700D3866F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29749E12EA3B99700D3866F /* ContentView.swift */; };
 		B29749E42EA3B99700D3866F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29749E32EA3B99700D3866F /* Item.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B2900B3D2EACF6C9004CE28B /* AppTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
+		B2900B3F2EAE3969004CE28B /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
 		B29749DC2EA3B99700D3866F /* Finances.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finances.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29749DF2EA3B99700D3866F /* FinancesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancesApp.swift; sourceTree = "<group>"; };
 		B29749E12EA3B99700D3866F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +98,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B2900B3C2EACF6AE004CE28B /* Fields */ = {
+			isa = PBXGroup;
+			children = (
+				B2900B3D2EACF6C9004CE28B /* AppTextField.swift */,
+			);
+			path = Fields;
+			sourceTree = "<group>";
+		};
 		B29749D32EA3B99700D3866F = {
 			isa = PBXGroup;
 			children = (
@@ -143,7 +155,7 @@
 			children = (
 				B2B2647F2EA930A400B71A17 /* Views */,
 				B2E7EE062EA442BB0017C94B /* Components */,
-				B2E7EDF82EA42D510017C94B /* Extensions */,
+				B2E7EDF82EA42D510017C94B /* Helpers */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -221,17 +233,19 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		B2E7EDF82EA42D510017C94B /* Extensions */ = {
+		B2E7EDF82EA42D510017C94B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				B2900B3F2EAE3969004CE28B /* Validators.swift */,
 				B2E7EDFA2EA42D690017C94B /* Color+Extensions.swift */,
 			);
-			path = Extensions;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		B2E7EE062EA442BB0017C94B /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B2900B3C2EACF6AE004CE28B /* Fields */,
 				B2E7EE072EA442C20017C94B /* AppBackgroundView.swift */,
 			);
 			path = Components;
@@ -383,9 +397,11 @@
 				B29749E22EA3B99700D3866F /* ContentView.swift in Sources */,
 				B29749E42EA3B99700D3866F /* Item.swift in Sources */,
 				B2B2647E2EA9309100B71A17 /* TermsView.swift in Sources */,
+				B2900B3E2EACF6C9004CE28B /* AppTextField.swift in Sources */,
 				B2E7EDFD2EA43B130017C94B /* SplashScreenView.swift in Sources */,
 				B2B2647A2EA91DFA00B71A17 /* RegisterView.swift in Sources */,
 				B29749E02EA3B99700D3866F /* FinancesApp.swift in Sources */,
+				B2900B402EAE3976004CE28B /* Validators.swift in Sources */,
 				B2B2647C2EA91E0E00B71A17 /* AuthenticationView.swift in Sources */,
 				B2E7EE082EA442CA0017C94B /* AppBackgroundView.swift in Sources */,
 				B2B2647B2EA91DFF00B71A17 /* LoginView.swift in Sources */,
@@ -550,6 +566,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MNMBFL3MNV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -580,6 +597,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MNMBFL3MNV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

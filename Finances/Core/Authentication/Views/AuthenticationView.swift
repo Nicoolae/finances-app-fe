@@ -8,6 +8,7 @@ struct AuthenticationView: View {
     
     var body: some View {
         VStack{
+            // MARK: - Welcome Text and Image
             Spacer()
             Text("Benvenuto in")
                 .foregroundStyle(.textPrimary)
@@ -67,12 +68,10 @@ struct AuthenticationView: View {
                 .font(.callout)
             
             Button("Leggi i nostri Termini & Condizioni.") {
-                showTerms = true  // ← Apre il modal
+                showTerms = true
             }
-
-            // 3. Modal che si mostra quando true
             .sheet(isPresented: $showTerms) {
-                TermsView()  // ← Contenuto del modal
+                TermsView()  // Contenuto del modal
             }
             
             
